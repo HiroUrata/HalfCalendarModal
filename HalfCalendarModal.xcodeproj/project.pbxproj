@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		54D33CAE269EEB72004312B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D33CAC269EEB72004312B1 /* Main.storyboard */; };
 		54D33CB0269EEB76004312B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D33CAF269EEB76004312B1 /* Assets.xcassets */; };
 		54D33CB3269EEB76004312B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D33CB1269EEB76004312B1 /* LaunchScreen.storyboard */; };
+		54D33CBD269EECA0004312B1 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33CBC269EECA0004312B1 /* ModalView.swift */; };
+		54D33CBF269EECAD004312B1 /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D33CBE269EECAD004312B1 /* ModalView.xib */; };
+		54D33CC4269EED9D004312B1 /* FSCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33CC3269EED9D004312B1 /* FSCalendarModel.swift */; };
+		A97986061510C44EE4667ADE /* Pods_HalfCalendarModal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCEE142CE5BFEDB057F61D0 /* Pods_HalfCalendarModal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BCEE142CE5BFEDB057F61D0 /* Pods_HalfCalendarModal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalfCalendarModal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D33CA3269EEB72004312B1 /* HalfCalendarModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfCalendarModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D33CA6269EEB72004312B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54D33CA8269EEB72004312B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		54D33CAF269EEB76004312B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54D33CB2269EEB76004312B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54D33CB4269EEB76004312B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D33CBC269EECA0004312B1 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		54D33CBE269EECAD004312B1 /* ModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
+		54D33CC3269EED9D004312B1 /* FSCalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarModel.swift; sourceTree = "<group>"; };
+		CB2EA1FAA04CFC675E2B0ACC /* Pods-HalfCalendarModal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalfCalendarModal.release.xcconfig"; path = "Target Support Files/Pods-HalfCalendarModal/Pods-HalfCalendarModal.release.xcconfig"; sourceTree = "<group>"; };
+		D729AF326BC265370D8815AE /* Pods-HalfCalendarModal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalfCalendarModal.debug.xcconfig"; path = "Target Support Files/Pods-HalfCalendarModal/Pods-HalfCalendarModal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97986061510C44EE4667ADE /* Pods_HalfCalendarModal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A83F17D9EF72A0428AB6870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BCEE142CE5BFEDB057F61D0 /* Pods_HalfCalendarModal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54D33C9A269EEB71004312B1 = {
 			isa = PBXGroup;
 			children = (
 				54D33CA5269EEB72004312B1 /* HalfCalendarModal */,
 				54D33CA4269EEB72004312B1 /* Products */,
+				E23E911850ABDAFF98101A5A /* Pods */,
+				3A83F17D9EF72A0428AB6870 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +79,49 @@
 			children = (
 				54D33CA6269EEB72004312B1 /* AppDelegate.swift */,
 				54D33CA8269EEB72004312B1 /* SceneDelegate.swift */,
-				54D33CAA269EEB72004312B1 /* ViewController.swift */,
-				54D33CAC269EEB72004312B1 /* Main.storyboard */,
-				54D33CAF269EEB76004312B1 /* Assets.xcassets */,
+				54D33CC0269EED57004312B1 /* Model */,
+				54D33CBB269EEC0B004312B1 /* View */,
+				54D33CBA269EEC01004312B1 /* Controller */,
 				54D33CB1269EEB76004312B1 /* LaunchScreen.storyboard */,
 				54D33CB4269EEB76004312B1 /* Info.plist */,
 			);
 			path = HalfCalendarModal;
+			sourceTree = "<group>";
+		};
+		54D33CBA269EEC01004312B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54D33CAA269EEB72004312B1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54D33CBB269EEC0B004312B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54D33CAC269EEB72004312B1 /* Main.storyboard */,
+				54D33CAF269EEB76004312B1 /* Assets.xcassets */,
+				54D33CBC269EECA0004312B1 /* ModalView.swift */,
+				54D33CBE269EECAD004312B1 /* ModalView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54D33CC0269EED57004312B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54D33CC3269EED9D004312B1 /* FSCalendarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E23E911850ABDAFF98101A5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D729AF326BC265370D8815AE /* Pods-HalfCalendarModal.debug.xcconfig */,
+				CB2EA1FAA04CFC675E2B0ACC /* Pods-HalfCalendarModal.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54D33CB7269EEB76004312B1 /* Build configuration list for PBXNativeTarget "HalfCalendarModal" */;
 			buildPhases = (
+				74818066C19D31499738B350 /* [CP] Check Pods Manifest.lock */,
 				54D33C9F269EEB72004312B1 /* Sources */,
 				54D33CA0269EEB72004312B1 /* Frameworks */,
 				54D33CA1269EEB72004312B1 /* Resources */,
+				E633094DA8E6779B4913C4D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +185,54 @@
 			files = (
 				54D33CB3269EEB76004312B1 /* LaunchScreen.storyboard in Resources */,
 				54D33CB0269EEB76004312B1 /* Assets.xcassets in Resources */,
+				54D33CBF269EECAD004312B1 /* ModalView.xib in Resources */,
 				54D33CAE269EEB72004312B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74818066C19D31499738B350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HalfCalendarModal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E633094DA8E6779B4913C4D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HalfCalendarModal/Pods-HalfCalendarModal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HalfCalendarModal/Pods-HalfCalendarModal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HalfCalendarModal/Pods-HalfCalendarModal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54D33C9F269EEB72004312B1 /* Sources */ = {
@@ -139,7 +241,9 @@
 			files = (
 				54D33CAB269EEB72004312B1 /* ViewController.swift in Sources */,
 				54D33CA7269EEB72004312B1 /* AppDelegate.swift in Sources */,
+				54D33CBD269EECA0004312B1 /* ModalView.swift in Sources */,
 				54D33CA9269EEB72004312B1 /* SceneDelegate.swift in Sources */,
+				54D33CC4269EED9D004312B1 /* FSCalendarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +387,7 @@
 		};
 		54D33CB8269EEB76004312B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D729AF326BC265370D8815AE /* Pods-HalfCalendarModal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +400,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HalfCalendar.HalfCalendarModal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		54D33CB9269EEB76004312B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2EA1FAA04CFC675E2B0ACC /* Pods-HalfCalendarModal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HalfCalendar.HalfCalendarModal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
